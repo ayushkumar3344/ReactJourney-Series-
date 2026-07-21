@@ -1,13 +1,14 @@
 import React, { useContext } from 'react'
-import { SubjectContext } from './ContextData'
+import { SubjectContext } from '../context/ContextData'
+
 
 const Subject = () => {
 
-    const subject = useContext(SubjectContext);
+    const subject = useContext(SubjectContext)
 
   return (
-    <div className='bg-emerald-500 p-10'>
-      <h1 className='text-2xl'> Subject is : {subject}</h1>
+    <div className='bg-black p-10' >
+      <h1 className='text-2xl mb-5'>Subject is : {subject}</h1>
     </div>
   )
 }
