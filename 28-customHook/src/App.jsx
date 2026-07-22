@@ -1,10 +1,13 @@
-import React from 'react'
+import ChildA from './components/ChildA'
+import ChildB from './components/ChildB'
 
 const App = () => {
+
+
   return (
     <div>
-      <h1>Custom Hook</h1>
-      
+      <ChildA />
+      <ChildB />
     </div>
   )
 }
