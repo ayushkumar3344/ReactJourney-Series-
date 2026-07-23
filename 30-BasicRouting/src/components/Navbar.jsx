@@ -11,6 +11,7 @@ const Navbar = () => {
         <ul className='flex gap-x-10 text-white underline'>
             <li><Link to="/" >Home</Link></li>
             <li><Link to="/about" >About</Link></li>
+            
             <li><Link to="/contact" >Contact</Link></li>
         </ul>
       </div>
