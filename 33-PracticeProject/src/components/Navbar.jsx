@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Outlet } from 'react-router'
+import {NavLink, Outlet } from 'react-router'
 
 const Navbar = () => {
   return (
@@ -10,21 +10,24 @@ const Navbar = () => {
         <h1 className='text-3xl font-extrabold'>Logo</h1>
       </div>
       <div>
-        <ul className='flex gap-x-4 '>
+        <ul className='flex gap-x-4'>
             <li>
-                <Link to={"/"} >Home</Link>
+                <NavLink to={"/"} >Home</NavLink>
             </li>
             <li>
-                <Link to={"/in/user/about"} >About</Link>
+                <NavLink to={"/in/user/about"} >About</NavLink>
             </li>
             <li>
-                <Link to={"/in/user/contact"} >Contact</Link>
+                <NavLink to={"/in/user/contact"} >Contact</NavLink>
             </li>
             <li>
-                <Link to={"/details"} >Details</Link>
+                <NavLink to={"/details"} >Details</NavLink>
             </li>
             <li>
-                <Link to={"/users"} >Users</Link>
+                <NavLink to={"/users"} >Users</NavLink>
+            </li>
+            <li>
+                <NavLink to={"/users/list"} >Lists</NavLink>
             </li>
         </ul>
       </div>
