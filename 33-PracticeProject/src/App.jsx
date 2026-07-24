@@ -15,15 +15,21 @@ const App = () => {
   return (
     <div>
 
-      <Navbar />
+      {/* <Navbar /> */}
+
+
 
 
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
+
+        <Route element={<Navbar />} >
+          <Route path='/' element={<Home />} />
+          <Route path='/in/user/about' element={<About />} />
+          <Route path='/in/user/contact' element={<Contact />} />
+        </Route>
+
         <Route path='/details' element={<Details />}>
-          <Route path='book' element={<Book />} />
+          <Route index element={<Book />} />
           <Route path='info' element={<Info />} />
           <Route path='vlog' element={<Vlog />} />
         </Route> 
