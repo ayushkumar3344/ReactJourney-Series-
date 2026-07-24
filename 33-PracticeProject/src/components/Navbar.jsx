@@ -23,6 +23,9 @@ const Navbar = () => {
             <li>
                 <Link to={"/details"} >Details</Link>
             </li>
+            <li>
+                <Link to={"/users"} >Users</Link>
+            </li>
         </ul>
       </div>
     </div>

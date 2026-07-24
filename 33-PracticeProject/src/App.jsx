@@ -9,6 +9,8 @@ import Details from './pages/Details'
 import Book from './pages/Book'
 import Info from './pages/Info'
 import Vlog from './pages/Vlog'
+import UserList from './pages/UserList'
+import UserDetails from './pages/UserDetails'
 
 
 const App = () => {
@@ -26,6 +28,8 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/in/user/about' element={<About />} />
           <Route path='/in/user/contact' element={<Contact />} />
+          <Route path='/users' element={<UserList />} /> 
+          <Route path='/users/:id' element={<UserDetails />} />
         </Route>
 
         <Route path='/details' element={<Details />}>
